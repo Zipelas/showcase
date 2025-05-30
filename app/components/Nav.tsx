@@ -20,7 +20,7 @@ export default function Nav() {
         </>
       ) : (
         <>
-        <Link href='/signin'>Signin</Link>
+        <Link className='cursor-pointer' href='/signin'>Signin</Link>
         </>
       )}
     </nav>
