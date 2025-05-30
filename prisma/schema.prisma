@@ -19,9 +19,9 @@ model Post {
   title     String
   content   String
   createdAt DateTime @default(now())
-  authorId  String
+  authorId  String?
 
-  author User @relation(fields: [authorId], references: [id])
+  author User? @relation(fields: [authorId], references: [id])
 }
 
 model User {

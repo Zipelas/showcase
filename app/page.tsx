@@ -16,7 +16,7 @@ export default async function Home() {
         {posts.map((post) => (
           <article key={post.id}>
             <span className='text-sm text-[#8D6E63]'>
-              Created by: {post.author.name}
+              Created by: {post.author?.name ?? 'Unknown'}
             </span>
             <h3 className='text-lg text-bold'>{post.title}</h3>
             <p className='text-[#8D6E63]'>{post.content}</p>
